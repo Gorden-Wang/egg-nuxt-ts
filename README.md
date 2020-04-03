@@ -1,6 +1,6 @@
-# hackernews-async-ts
+# https://github.com/Gorden-Wang/egg-nuxt-ts
 
-[Hacker News](https://news.ycombinator.com/) showcase using typescript && egg
+nuxt showcase using typescript && egg
 
 ## QuickStart
 
