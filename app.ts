@@ -5,7 +5,7 @@ const { Nuxt, Builder } = require('nuxt');
  * @Author: Gorden
  * @Date: 2020-04-02 18:14:54
  * @LastEditors: Gorden
- * @LastEditTime: 2020-04-02 22:20:18
+ * @LastEditTime: 2020-04-03 12:02:02
  */
 class AppBootHook implements IBoot {
   private readonly app: Application;
@@ -22,13 +22,9 @@ class AppBootHook implements IBoot {
     // 例如：创建自定义应用的示例
     this.app.nuxt = new Nuxt(this.app.config.nuxtConfig);
     await this.app.nuxt.ready();
-    console.log(11111111);
     if (this.app.config.nuxtConfig.dev) {
       const builder = new Builder(this.app.nuxt);
       await builder.build();
-      await new Promise(resolve => {
-        setTimeout(resolve, 3 * 5000);
-      });
     }
   }
 
