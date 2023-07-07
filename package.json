@@ -47,7 +47,7 @@
     "typescript": "^3.0.0",
     "@nuxt/typescript-build": "^0.6.0",
     "@nuxtjs/stylelint-module": "^3.1.0",
-    "stylelint": "^10.1.0"
+    "stylelint": "^15.10.1"
   },
   "engines": {
     "node": ">=8.9.0"
